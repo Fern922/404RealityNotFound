@@ -171,7 +171,7 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  opacity: 0.15;
+  opacity: 0.4;
   pointer-events: none;
 }
 
@@ -426,4 +426,30 @@
 
 .text-2 {
   font-weight: 600;
+}
+
+/* Parallax scrolling effects */
+.parallax {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.parallax-slow {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+.parallax-fast {
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+/* Enhanced hover effects for cards */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }

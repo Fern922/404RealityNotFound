@@ -101,6 +101,29 @@ const Home = () => {
     
     return () => sections.forEach(section => observer.unobserve(section));
   }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.pageYOffset;
+      const parallaxElements = document.querySelectorAll('.parallax-slow');
+      const parallaxFastElements = document.querySelectorAll('.parallax-fast');
+      
+      parallaxElements.forEach((element) => {
+        const speed = 0.5;
+        const yPos = -(scrolled * speed);
+        (element as HTMLElement).style.transform = `translate3d(0, ${yPos}px, 0)`;
+      });
+
+      parallaxFastElements.forEach((element) => {
+        const speed = 0.8;
+        const yPos = -(scrolled * speed);
+        (element as HTMLElement).style.transform = `translate3d(0, ${yPos}px, 0)`;
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ 
@@ -250,13 +273,13 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className="mt-20 flex justify-center">
+          <div className="mt-20 flex justify-center parallax-slow">
             <div className="ar-icon w-40 h-40 bg-blue-500 bg-opacity-10 rounded-full flex items-center justify-center">
               <i className="fas fa-mobile-alt text-6xl text-blue-500"></i>
             </div>
           </div>
           
-          <div className="mt-16 fade-in">
+          <div className="mt-16 fade-in parallax-fast">
             <h3 className="text-2xl font-bold text-center text-gray-800 mb-8">Multimedia Preview</h3>
             <MultimediaCarousel />
           </div>
@@ -338,6 +361,56 @@ const Home = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Capstone Projects Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16 fade-in">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Capstone Projects</h2>
+            <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+            <p className="max-w-3xl mx-auto text-lg text-gray-600">
+              Innovative research and development projects advancing AR technology in cultural heritage preservation
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {capstones.map((capstone, idx) => (
+              <div 
+                key={capstone.id}
+                className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 cursor-pointer border-2 border-transparent hover:border-blue-200 hover-lift"
+                onClick={() => setSelectedCapstone(capstone)}
+                style={{ 
+                  animation: `fadeIn 0.6s ease ${idx * 0.2}s forwards`,
+                  opacity: 0
+                }}
+              >
+                <div className="flex items-center mb-4">
+                  <div className="ar-icon mr-4">
+                    <i className={`fas ${capstone.status === 'completed' ? 'fa-check-circle text-emerald-500' : 'fa-clock text-yellow-500'} text-2xl`}></i>
+                  </div>
+                  <span className={`px-3 py-1 rounded-full text-xs font-medium ${
+                    capstone.status === 'completed' 
+                      ? 'bg-emerald-100 text-emerald-800' 
+                      : 'bg-yellow-100 text-yellow-800'
+                  }`}>
+                    {capstone.status === 'completed' ? 'Completed' : 'In Progress'}
+                  </span>
+                </div>
+                
+                <h3 className="text-xl font-bold text-gray-800 mb-3">{capstone.title}</h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">{capstone.description}</p>
+                
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-500">{capstone.timeline}</span>
+                  <button className="text-blue-500 hover:text-blue-600 font-medium text-sm">
+                    View Details <i className="fas fa-arrow-right ml-1"></i>
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

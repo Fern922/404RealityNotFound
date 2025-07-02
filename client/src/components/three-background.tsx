@@ -39,7 +39,7 @@ const ThreeJSBackground = () => {
         color: 0x3b82f6,
         wireframe: true,
         transparent: true,
-        opacity: 0.6
+        opacity: 0.8
       });
       
       const arElements: Array<{
@@ -48,22 +48,22 @@ const ThreeJSBackground = () => {
         floatOffset: number;
       }> = [];
       
-      // Reduced number of elements for better performance
-      for (let i = 0; i < 8; i++) {
+      // Increased number of elements for more visibility
+      for (let i = 0; i < 15; i++) {
         const geometry = geometries[i % geometries.length];
         const element = new window.THREE.Mesh(geometry, material);
         
-        element.position.x = (Math.random() - 0.5) * 25;
-        element.position.y = (Math.random() - 0.5) * 25;
-        element.position.z = (Math.random() - 0.5) * 25;
-        element.scale.setScalar(Math.random() * 0.8 + 0.3);
+        element.position.x = (Math.random() - 0.5) * 35;
+        element.position.y = (Math.random() - 0.5) * 35;
+        element.position.z = (Math.random() - 0.5) * 35;
+        element.scale.setScalar(Math.random() * 1.2 + 0.4);
         
         scene.add(element);
         arElements.push({
           mesh: element,
           rotationSpeed: {
-            x: (Math.random() - 0.5) * 0.01,
-            y: (Math.random() - 0.5) * 0.01
+            x: (Math.random() - 0.5) * 0.015,
+            y: (Math.random() - 0.5) * 0.015
           },
           floatOffset: Math.random() * Math.PI * 2
         });
