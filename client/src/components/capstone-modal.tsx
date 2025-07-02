@@ -92,7 +92,7 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
             ) : (
               <div className="text-center py-32">
                 <div className="ar-icon mb-6">
-                  <img src="/public/work.svg" alt="working" width="32" height="32" />
+                  <img src="/client/public/work.svg" alt="working" width="32" height="32" />
                 </div>
                 <h3 className="text-3xl font-semibold text-gray-800 mb-4">Capstone 2 is still a work in progress</h3>
               </div>
