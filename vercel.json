@@ -1,11 +1,22 @@
 {
   "builds": [
-    { "src": "client/vite.config.ts", "use": "@vercel/static-build", "config": { "distDir": "public" } },
-    { "src": "api/index.ts", "use": "@vercel/node" }
+    {
+      "src": "client/index.html",
+      "use": "@vercel/static-build"
+    },
+    {
+      "src": "api/**/*.ts",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1" },
-    { "src": "/(.*)", "dest": "/public/index.html" }
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/index.html"
+    }
   ]
 }
-
