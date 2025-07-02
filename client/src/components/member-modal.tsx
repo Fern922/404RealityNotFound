@@ -47,17 +47,6 @@ const MemberModal = ({ member, onClose }: MemberModalProps) => {
                 {member.description || "Dedicated team member contributing to the AR Museum Portal project. Passionate about technology and cultural preservation through innovative digital solutions."}
               </p>
               
-              <div className="border-t border-gray-200 pt-4">
-                <h5 className="font-medium text-gray-800 mb-3">Contributions</h5>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {(member.skills || ['Frontend Development', 'UI/UX Design', 'Project Management']).map((skill, idx) => (
-                    <span key={idx} className="px-3 py-1 bg-ar-blue-100 text-ar-blue-800 rounded-full text-sm">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-              
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-500 hover:text-ar-blue-500 transition-colors p-2 hover:bg-gray-100 rounded-lg">
                   <i className="fab fa-linkedin text-xl"></i>

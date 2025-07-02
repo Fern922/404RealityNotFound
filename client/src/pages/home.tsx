@@ -439,33 +439,76 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Development Process Section */}
       <section id="process" className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Development Process</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Agile Development Process</h2>
             <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
             <p className="max-w-3xl mx-auto text-lg text-gray-600">
-              Our systematic approach to developing the AR Museum Portal application
+              The development of the Bohol Lens followed the Agile methodology, which involves iterative cycles of planning, designing, developing, testing, deploying, and reviewing.
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {[
-                { icon: "fas fa-search", title: "Research", description: "Analyzing user needs and cultural heritage requirements" },
-                { icon: "fas fa-pencil-ruler", title: "Design", description: "Creating intuitive AR interfaces and user experiences" },
-                { icon: "fas fa-code", title: "Development", description: "Building robust AR applications with modern technologies" },
-                { icon: "fas fa-rocket", title: "Deploy", description: "Launching and maintaining the museum experience" }
-              ].map((step, idx) => (
-                <div key={idx} className="text-center fade-in" style={{ animationDelay: `${idx * 0.1}s` }}>
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <i className={`${step.icon} text-2xl text-blue-500`}></i>
-                  </div>
-                  <h3 className="text-xl font-semibold text-gray-800 mb-2">{step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
-                </div>
-              ))}
+          <div className="max-w-4xl mx-auto bg-gray-50 rounded-xl p-8 fade-in">
+            <div className="mb-8">
+              <div className="flex items-center mb-4">
+                <i className="fas fa-tasks text-blue-500 text-2xl mr-3"></i>
+                <h3 className="text-xl font-semibold text-blue-500">Planning Phase</h3>
+              </div>
+              <p className="text-gray-700">
+                The researchers proposed Bohol Lens, an augmented reality-based museum application designed to preserve and promote Boholano culture through immersive interaction with digital exhibits. The system is exclusively developed for Android mobile devices using Unity and Vuforia. High-quality 3D models of cultural artifacts were created using a professional camera through photogrammetry techniques and modeling. During this phase, all technical requirements were defined, including software tools, hardware, and mobile deployment limitations. A multilingual approach was also planned, integrating audio narration in English, Filipino, and Bisaya to cater to a wider audience, especially local users.
+              </p>
+            </div>
+            
+            <div className="mb-8">
+              <div className="flex items-center mb-4">
+                <i className="fas fa-pencil-ruler text-blue-500 text-2xl mr-3"></i>
+                <h3 className="text-xl font-semibold text-blue-500">Designing Phase</h3>
+              </div>
+              <p className="text-gray-700">
+                The researchers conducted interviews and collaborative discussions with National Museum of the Philippines - Bohol curators, cultural experts, and IT professionals to gather user requirements and expectations. The mobile interface was designed with simplicity and clarity in mind, ensuring smooth navigation and easy access to AR content. Wireframes and mockups were created for the AR views, audio controls, and language selection interface. Special attention was given to usability on various Android screen sizes and user environments. UI components were optimized for mobile interaction, and interface elements were prepared to support dynamic switching between English, Filipino, and Bisaya narrations.
+              </p>
+            </div>
+            
+            <div className="mb-8">
+              <div className="flex items-center mb-4">
+                <i className="fas fa-code text-blue-500 text-2xl mr-3"></i>
+                <h3 className="text-xl font-semibold text-blue-500">Development Phase</h3>
+              </div>
+              <p className="text-gray-700">
+                The development phase focused on building the AR mobile application using Unity integrated with the Vuforia SDK for image and marker-based tracking. Photogrammetry-generated 3D models were imported and optimized for real-time rendering on Android devices. Each AR scene was paired with multilingual audio narrations, and a language toggle feature was implemented to allow users to choose their preferred language before viewing the artifacts. All code and assets were version-controlled using GitHub, ensuring maintainability and collaboration during agile sprints. The development also considered offline functionality to ensure accessibility without internet connectivity.
+              </p>
+            </div>
+            
+            <div className="mb-8">
+              <div className="flex items-center mb-4">
+                <i className="fas fa-bug text-blue-500 text-2xl mr-3"></i>
+                <h3 className="text-xl font-semibold text-blue-500">Testing Phase</h3>
+              </div>
+              <p className="text-gray-700">
+                During the testing phase, the mobile application underwent functional, compatibility, and usability testing across a variety of Android smartphones. AR tracking, model placement accuracy, performance under different lighting conditions, and audio playback for all three languages were thoroughly tested. Bugs and inconsistencies identified during testing were documented and resolved in subsequent development cycles.
+              </p>
+            </div>
+            
+            <div className="mb-8">
+              <div className="flex items-center mb-4">
+                <i className="fas fa-rocket text-blue-500 text-2xl mr-3"></i>
+                <h3 className="text-xl font-semibold text-blue-500">Deployment Phase</h3>
+              </div>
+              <p className="text-gray-700">
+                The final application was packaged and deployed exclusively as an Android APK file. The app was tested on various Android versions to ensure compatibility and performance. All assets, including 3D models and multilingual audio files, were bundled into the APK to support offline use. The deployment process involved direct installation to devices for demonstrations and educational use in schools and public exhibits. The app required no internet connection, making it suitable for remote areas with limited connectivity. The deployment confirmed the system met all functional requirements, including AR stability and multilingual accessibility.
+              </p>
+            </div>
+            
+            <div>
+              <div className="flex items-center mb-4">
+                <i className="fas fa-chart-line text-blue-500 text-2xl mr-3"></i>
+                <h3 className="text-xl font-semibold text-blue-500">Review Phase</h3>
+              </div>
+              <p className="text-gray-700">
+                In the review phase, the researchers evaluated the overall performance, usability, and impact of the deployed mobile application. Feedback from initial users indicated strong appreciation for the inclusion of Bisaya and Filipino narrations, which made the experience more engaging and culturally authentic. Minor usability issues and enhancement suggestions such as clearer audio icons and additional visual guides were documented for future improvements. The researchers concluded that the mobile-only AR approach was effective for their target audience and would consider future updates to include more artifacts, interactive elements, and possibly additional local dialects.
+              </p>
             </div>
           </div>
         </div>

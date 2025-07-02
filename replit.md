@@ -101,6 +101,10 @@ The AR Museum Portal is a modern web application designed for the National Museu
 ```
 Changelog:
 - July 02, 2025. Initial setup
+- July 02, 2025. Updated team member descriptions with detailed personal information (age, location, education, contact details)
+- July 02, 2025. Removed contributions section from team member modals to simplify profile display
+- July 02, 2025. Updated Capstone 1 timeline from "September 2023 - February 2024" to "June 2 - July 12"
+- July 02, 2025. Replaced development process section with original detailed Agile methodology content including 6 phases: Planning, Designing, Development, Testing, Deployment, and Review
 ```
 
 ## User Preferences

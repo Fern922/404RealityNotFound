@@ -24,7 +24,7 @@ export const capstones: Capstone[] = [
     title: "Capstone 1",
     description: "An innovative augmented reality system designed to enhance visitor experience at the National Museum of the Philippines - Bohol through interactive digital exhibits and immersive storytelling.",
     status: "completed",
-    timeline: "September 2023 - February 2024",
+    timeline: "June 2 - July 12",
     chapters: [
       {
         id: "chapter1",
