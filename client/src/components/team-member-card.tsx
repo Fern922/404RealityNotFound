@@ -18,9 +18,19 @@ const TeamMemberCard = ({ member, delay, onClick }: TeamMemberCardProps) => {
         <div className="flip-card-inner">
           <div className="flip-card-front">
             <div className="mb-4">
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-ar-blue-400 to-ar-blue-600 flex items-center justify-center text-white text-2xl font-bold mx-auto shadow-lg">
-                {member.name.split(' ').map(n => n.charAt(0)).join('')}
-              </div>
+              {member.image ? (
+                <div className="w-16 h-16 rounded-full mx-auto shadow-lg overflow-hidden">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-ar-blue-400 to-ar-blue-600 flex items-center justify-center text-white text-2xl font-bold mx-auto shadow-lg">
+                  {member.name.split(' ').map(n => n.charAt(0)).join('')}
+                </div>
+              )}
             </div>
             <h3 className="text-lg font-semibold mb-2">{member.name}</h3>
             <p className="text-sm font-medium text-ar-blue-600">{member.role}</p>

@@ -27,9 +27,19 @@ const MemberModal = ({ member, onClose }: MemberModalProps) => {
           
           <div className="flex flex-col md:flex-row gap-6">
             <div className="flex-shrink-0">
-              <div className="w-32 h-32 rounded-full bg-gradient-to-br from-ar-blue-500 to-ar-blue-600 flex items-center justify-center text-white text-4xl mx-auto shadow-lg">
-                {member.name.split(' ').map(n => n.charAt(0)).join('')}
-              </div>
+              {member.image ? (
+                <div className="w-32 h-32 rounded-full mx-auto shadow-lg overflow-hidden">
+                  <img 
+                    src={member.image} 
+                    alt={member.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-ar-blue-500 to-ar-blue-600 flex items-center justify-center text-white text-4xl mx-auto shadow-lg">
+                  {member.name.split(' ').map(n => n.charAt(0)).join('')}
+                </div>
+              )}
             </div>
             <div className="flex-1">
               <h4 className="font-semibold text-lg mb-3 text-gray-800">About</h4>
