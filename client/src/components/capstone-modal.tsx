@@ -90,22 +90,11 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
                 ))}
               </div>
             ) : (
-              <div className="text-center py-16">
+              <div className="text-center py-32">
                 <div className="ar-icon mb-6">
                   <i className="fas fa-tools text-6xl text-ar-blue-400"></i>
                 </div>
-                <h3 className="text-2xl font-semibold text-gray-800 mb-4">Work in Progress</h3>
-                <p className="text-gray-600 max-w-md mx-auto">
-                  This capstone project is currently under development. 
-                  Chapter content will be available once the project is completed.
-                </p>
-                <div className="mt-8">
-                  <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 inline-block">
-                    <p className="text-yellow-800 text-sm font-medium">
-                      Expected completion: Coming Soon
-                    </p>
-                  </div>
-                </div>
+                <h3 className="text-3xl font-semibold text-gray-800 mb-4">Capstone 2 is still a work in progress</h3>
               </div>
             )}
           </div>
