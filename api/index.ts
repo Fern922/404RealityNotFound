@@ -25,7 +25,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   try {
     // Example route
-    if (req.url?.startsWith('/api/hello')) {
+    if (req.url?.startsWith('/api/index')) {
       return sendResponse(200, { message: 'Hello from Vercel!' });
     }
 
