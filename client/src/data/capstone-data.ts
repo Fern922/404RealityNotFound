@@ -22,159 +22,127 @@ export const capstones: Capstone[] = [
   {
     id: 1,
     title: "Capstone 1",
-    description: "An innovative augmented reality system designed to enhance visitor experience at the National Museum of the Philippines - Bohol through interactive digital exhibits and immersive storytelling.",
+    description: "Bohol Lens: Reminiscing the Past, Seeing the Culture — An Immersive Boholano Augmented Reality Experience. An innovative augmented reality system designed to enhance visitor experience at the National Museum of the Philippines - Bohol through interactive digital exhibits and immersive storytelling.",
     status: "completed",
-    timeline: "June 2 - July 12",
+    timeline: "June 2 - July 12, 2025",
     chapters: [
       {
         id: "chapter1",
-        title: "CHAPTER I",
+        title: "CHAPTER I - Introduction",
         sections: [
           {
-            title: "Introduction",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            title: "Project Context",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            title: "Purpose and Description",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "Introduction", 
+            content: "Bohol is a province rich in cultural heritage, boasting iconic landmarks such as the Chocolate Hills, as well as deep-rooted traditions and historical narratives. At the heart of this cultural preservation is the National Museum of the Philippines – Bohol, a vital institution that houses significant artifacts, artworks, and historical items unique to Boholano identity. However, traditional museum presentation methods such as printed labels, static displays, and guided tours often limit visitor engagement and may not fully capture the rich cultural stories behind each exhibit.\n\nIn today's rapidly advancing digital era, people have access to immersive and interactive experiences. Technologies like Augmented Reality (AR) offer a powerful opportunity to bridge historical content with modern interaction. According to Kucharoenthavorn (2024), integrating AR significantly improves historical knowledge and learning engagement among museum visitors.\n\nThe primary objective of this study is to develop an AR-based mobile application, Bohol Lens, that transforms traditional museum visits into interactive learning journeys at the National Museum of the Philippines in Bohol. The application will use QR codes placed near the selected artifacts to trigger AR experiences. Through smartphones, users can access 3D reconstructions and multilingual content (English, Filipino, and Bisaya), ensuring accessibility for a more diverse audience.\n\nIn addition to providing enriched educational content, Bohol Lens will feature interactive elements such as folklore stories and fun facts to encourage active learning. This initiative merges technology with heritage preservation to foster a deeper cultural understanding, modernizing the way museums engage with their audiences and enriching the visitor experience.\n\nBy leveraging the capabilities of AR technology, Bohol Lens addresses the limitations of static exhibits, supports the museum's educational mission, and contributes to the preservation and appreciation of Bohol's unique cultural heritage."
           },
           {
             title: "1.1 Statement of the Problem",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "The primary objective of this study is to develop the Bohol Lens, an AR-based mobile application that enhances the visitor experience at the National Museum of the Philippines – Bohol. Specifically, the study aims to address the following problems:\n\n• The museum relies on static and traditional display methods, which limit visitor engagement and interaction with the exhibits.\n\n• Visitors have limited access to deeper, multimedia-based information about the cultural and historical background of artifacts.\n\n• There is a lack of immersive and interactive tools such as 3D visualizations, audio guides, or video content to enhance the learning experience.\n\n• The absence of QR codes or image-based markers results in missed opportunities for automatic and context-aware content delivery.\n\n• The museum does not currently offer multilingual support, which reduces accessibility for non-English or non-Tagalog speakers, particularly local Bisaya-speaking audiences.\n\n• There is a need for a mobile-based solution that supports the museum's mission of cultural education through modern and accessible technology."
           },
           {
-            title: "1.2 General Objective",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "1.2 General Objective", 
+            content: "Develop an AR-based mobile application that enhances cultural appreciation by providing interactive, marker-based learning experiences within the National Museum of the Philippines – Bohol."
           },
           {
-            title: "1.3 Specific Objective",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "1.3 Specific Objectives",
+            content: "• To design a mobile AR interface that overlays digital content—such as 3D models, audio narrations, and videos—on selected museum artifacts.\n\n• To implement QR codes or image-based markers on exhibit zones to trigger AR experiences.\n\n• To provide multilingual content (e.g., English, Filipino, Bisaya) for broader accessibility.\n\n• To encourage learning through interactive features, such as folklore stories and fun facts.\n\n• To assist museum efforts in promoting cultural education using modern, mobile-based tools."
           },
           {
-            title: "1.5 Significance of the Study",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "1.4 Significance of the Study",
+            content: "The people who will benefit from the AR-based mobile application are the following:\n\n**Local Community.** By increasing awareness and appreciation of local culture and heritage, the project contributes to community pride, cultural preservation, and tourism promotion.\n\n**Museum Management (National Museum of the Philippines – Bohol).** The system offers a modern tool for promoting exhibits, improving visitor engagement, and supporting the museum's mission to educate and preserve cultural heritage.\n\n**Museum Visitors.** The developed mobile AR application will enhance the museum experience of visitors by providing interactive, engaging, and informative content that deepens cultural appreciation.\n\n**Educators and Students.** The application serves as a supplementary learning tool that supports cultural and historical education through interactive and multilingual features.\n\n**Future Researchers.** This study provides valuable insights into the integration of AR technology in educational and cultural contexts, serving as a reference for similar future projects."
           },
           {
-            title: "1.6 Scope and Limitations of the Study",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "1.5 Scope and Limitations",
+            content: "**Scope**\n\n• The system is focused exclusively on the exhibits within the National Museum of the Philippines – Bohol.\n\n• AR markers will be installed beside selected artifacts to launch digital content such as:\n  - 3D models of artifacts or reconstructions\n  - Narrated historical information or folklore\n  - Historical timelines\n  - Multimedia guides (e.g., videos or animations)\n\n• The application is designed for Android using Unity and Vuforia, ensuring a smooth and intuitive user experience.\n\n**Limitations**\n\n• AR functionality is available only on AR-supported Android devices.\n\n• The initial version will cover only a select number of exhibits due to resource limitations.\n\n• No real-time user tracking or online features (e.g., cloud storage, personalized tours).\n\n• Content accuracy depends on the availability of resources and effective museum coordination.\n\n• The app cannot function outside museum premises or without an active camera."
+          },
+          {
+            title: "1.6 Definition of Terms",
+            content: "**3D Model:** A digital representation of an object with depth, height, and width, often used in simulations or AR environments.\n\n**Augmented Reality (AR):** A technology that superimposes computer-generated content (e.g., images, 3D models, audio) onto the real world using mobile devices.\n\n**Cultural Heritage:** The legacy of physical artifacts and intangible attributes of a group or society passed from generation to generation.\n\n**Immersive Experience:** A type of user experience that deeply engages the senses and attention through digital interactivity.\n\n**Marker-Based AR:** An AR method that uses visual markers (e.g., QR codes or images) to anchor virtual content in a real-world environment.\n\n**Multilingual Support:** The ability of a system to provide content in more than one language to accommodate diverse users.\n\n**QR Code Marker:** A type of visual marker that, when scanned, triggers specific digital content in the AR application."
           }
         ]
       },
       {
         id: "chapter2",
-        title: "CHAPTER II",
+        title: "CHAPTER II - Review of Related Literature and Studies",
         sections: [
           {
-            title: "Review of Related Literature and Studies",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.1 International Studies",
+            content: "This chapter reviews pertinent literature and studies that are related to the current research, examining both international and local studies that have explored the use of Augmented Reality in cultural heritage preservation and museum experiences."
           },
           {
-            title: "2.1 Foreign-Related Conceptual Literature",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.1.1 Civilisations AR by BBC (2018)",
+            content: "The BBC developed the Civilisations AR app to allow users to explore museum artifacts using their smartphones (Android). It uses Augmented Reality (AR) to bring historical items into the user's physical space, where they can rotate, zoom in, and learn detailed information about each object. The app features 3D models, audio descriptions, and historical facts presented clearly and engagingly.\n\nThis mobile experience enables people—especially students and those far from museums—to engage with cultural heritage in an immersive format. Instead of just reading or watching videos, users can actually 'place' the artifacts in front of them using AR and explore them closely.\n\n**Relevance to this study:** Civilisations AR demonstrates how AR can be utilized to make learning about history and culture more engaging and enjoyable. It inspired the design of Bohol Lens, which also uses 3D models and real-time interaction to promote appreciation for local culture and heritage.\n\n**Reference (APA 7th):** British Broadcasting Corporation. (2018). Civilisations AR [Mobile application software]. BBC Media. https://www.bbc.co.uk/taster/pilots/civilisations-ar"
           },
           {
-            title: "2.1.1 Title Sample 1",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.1.2 Google Expeditions (2015–2021)",
+            content: "Google Expeditions was a pioneering educational app that allowed teachers and students to go on virtual and augmented reality field trips. In AR mode, users could project and interact with 3D models of cultural artifacts, biological structures, and historical landmarks directly in their classrooms. Although the platform was discontinued in 2021, it was widely recognized for making immersive learning experiences more accessible (Google Inc., 2021).\n\n**Relevance to this study:** This project shows the power of mobile AR in educational contexts, just like Bohol Lens. It supports the potential of AR to increase engagement and understanding through hands-on virtual interaction with cultural content.\n\n**APA 7th Reference:** Google Inc. (2021). Google Expeditions [Mobile application software]. https://edu.google.com/products/vr-ar/expeditions"
           },
           {
-            title: "2.1.2 Title Sample 2",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.1.3 ARNav: Augmented Reality Navigation for Cultural Sites (Höllerer et al., 2020)",
+            content: "ARNav is a research project that explores how Augmented Reality (AR) can assist people in navigating cultural and historical locations, such as museums, campuses, or heritage sites. The system displayed digital arrows, labels, and information overlays through a smartphone screen, guiding users as they walked through physical spaces. It combined AR with GPS and image recognition to give real-time directions and contextual information.\n\nUsers found it easier to explore unfamiliar places and learn about different exhibits or landmarks without needing a physical guide. The study also showed that AR made the experience more enjoyable and informative, especially for younger users.\n\n**Relevance to this study:** ARNav supports the idea that AR can be used to make cultural tours more interactive and accessible. Just like Bohol Lens, ARNav provides real-time digital information that helps people explore and appreciate cultural sites. It proves that mobile AR can improve both navigation and educational experiences at historical locations.\n\n**Reference (APA 7th):** Höllerer, T., Feiner, S., & Pavlik, J. (2020). ARNav: Augmented reality navigation system for cultural environments. Journal of Cultural Heritage Technology, 15(2), 101–115."
           },
           {
-            title: "2.1.3 Title Sample 3",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.2 Local Studies (Philippines)",
+            content: "This section examines local Philippine studies that have explored the application of Augmented Reality technology in cultural heritage preservation and educational contexts within the country."
           },
           {
-            title: "2.2 Local-Related Conceptual Literature",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.2.1 The Role of Augmented Reality in Enhancing Visitor Experience at the National Museum of Natural History (Bilbao et al., 2022–2023)",
+            content: "Bilbao, Mangulabnan, Mentino, Pagunsan, Tappa, and Olalia conducted a study (2022–2023) at Lyceum of the Philippines University – Manila, exploring how AR overlays—triggered by markers—can impact visitor experience at the National Museum of Natural History, Manila.\n\n**Relevance to Bohol Lens:**\n\n• Provides solid empirical evidence on AR's positive effects in a Philippine museum context, reinforcing the potential impact of Bohol Lens.\n\n• Offers a tested survey framework for assessing visitor responses, which is helpful for our app's evaluation phase.\n\n• Delivers practical design insights (clarity, seamless AR integration) directly applicable to marker-based AR development.\n\n**Reference (APA 7th):** Bilbao, R. E., Mangulabnan, J. A. C., Mentino, W. M. G., Pagunsan, L. M. E., Tappa, D. J. D., & Olalia, R. (2022–2023). The role of augmented reality in enhancing the museum experience of visitors in the National Museum of Natural History (Undergraduate thesis). Lyceum of the Philippines University – Manila."
           },
           {
-            title: "2.2.1 Title Sample 1",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.2.2 Augmented Reality-Based Cultural and Natural Heritage Preservation of Quirino Province (Duldulao & Palaoag, 2024)",
+            content: "This study outlines a developmental framework using Augmented Reality (AR) to preserve both cultural and natural heritage in Quirino Province. Employing design thinking, UML system modeling, and surveys of municipal tourism officers and LGU employees, the research proposes an AR-based virtual tourism system aimed at safeguarding the province's heritage for future generations.\n\n**Relevance to Bohol Lens:** The study offers a strong local precedent for using AR to enhance cultural education and heritage preservation in a provincial Philippine context. It also provides valuable insights on stakeholder engagement, AR framework design, and survey-based evaluation methods.\n\n**Reference (APA 7th):** Duldulao, A. V., & Palaoag, T. D. (2024, April). Augmented Reality-based cultural and natural heritage preservation of Quirino Province: A proposed developmental framework. Journal of Electrical Systems, 20(4s), 1179–1186. https://doi.org/10.52783/jes.2163"
           },
           {
-            title: "2.2.2 Title Sample 2",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            title: "2.2.3 Title Sample 3",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "2.2.3 Mobile Augmented Reality for Heritage Education: The Case of Cebu's Historical Landmarks (Reyes & Domingo, 2022)",
+            content: "This study designed a mobile AR application to educate users about Cebu's major historical landmarks, including Fort San Pedro and Magellan's Cross. By scanning physical markers at tourist sites, users accessed 3D models, historical narratives, and audio guides. The researchers employed a mixed-methods approach, combining surveys and observations, to assess the app's impact on cultural awareness and tourism engagement.\n\n**Relevance to Bohol Lens:** The project provides a concrete example of how mobile AR can be used to deliver contextual heritage content in a regional setting. It highlights practical considerations in design, content delivery, and user testing—all of which are valuable for the Bohol Lens project, which aims to bring Boholano heritage into an interactive experience.\n\n**Reference (APA 7th):** Reyes, L. T., & Domingo, P. M. (2022). The case of Cebu's historical landmarks. Mobile Augmented Reality for Heritage Education: Journal of Philippine Digital Innovation, 3(1), 25–39. https://doi.org/10.5281/zenodo.10563725"
           }
         ]
       },
       {
-        id: "chapter3",
-        title: "CHAPTER III",
+        id: "chapter3", 
+        title: "CHAPTER III - Technical Background",
         sections: [
           {
-            title: "Technical Background",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
             title: "3.1 Technicality of the Project",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "The proposed system is an Android-based mobile application designed using Augmented Reality (AR) technology. The application uses marker-based AR to overlay 3D models, multilingual audio narrations, videos, and folklore content on physical museum exhibits. It is a technically intensive project that incorporates Unity, Vuforia, and Blender software tools, primarily understood by students and professionals in the IT and multimedia fields.\n\nKey technical components include:\n\n• **Augmented Reality SDKs (Vuforia)** - For marker recognition and AR content overlay\n\n• **Mobile development frameworks (Unity, Android SDK)** - For application development and deployment\n\n• **3D modeling software (Blender)** - For creating and optimizing cultural artifact models\n\n• **Multimedia integration (audio, animation, video)** - For rich content delivery\n\n• **Multilingual content system** - Supporting English, Filipino, and Bisaya languages\n\n• **Offline functionality using local storage** - Ensuring accessibility without internet connectivity"
           },
           {
-            title: "3.2 Details of the Technologies to be used",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            title: "3.3 Gantt Chart",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "3.2 Details of the Technologies to be Used",
+            content: "The development and deployment of the Bohol Lens mobile application require the integration of several technologies:\n\n**Unity 3D** - A powerful game engine used to develop interactive AR content. Unity supports the rendering of 3D models and enables the integration of multimedia features, including animation, sound, and video. It serves as the primary platform for building the application.\n\n**Vuforia Augmented Reality SDK** - A marker-based AR tool that enables image recognition and tracking. Vuforia is integrated with Unity to identify visual triggers (such as QR codes or image markers) placed near museum artifacts, which then activate the AR content.\n\n**Blender** - An open-source 3D modeling and animation software used to create and refine the digital replicas of museum artifacts. Blender ensures the 3D models are optimized for mobile performance without sacrificing visual quality.\n\n**Android Studio** - Used for final app compilation and testing, Android Studio provides the framework for building and deploying the Bohol Lens application on Android devices.\n\n**Multilingual Audio and Text System** - The application features audio narrations and text content in English, Filipino, and Cebuano (Bisaya). Voice recordings are managed using tools such as Audacity, and multilingual support is handled through Unity's localization system.\n\n**QR Code Integration** - Each exhibit contains a unique QR code that, when scanned through the app, launches a specific AR experience. This makes the system scalable and flexible for future expansions.\n\n**Smartphones with ARCore Support** - The app is optimized for Android smartphones that support ARCore, ensuring a wide range of modern mobile devices can run the application smoothly inside the museum premises."
           },
           {
             title: "3.4 Cost-Benefit Analysis",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "The cost-benefit analysis calculates and totals the money value of the system's benefits and expenditures to see if it is profitable or worthy of investment.\n\n**PROPOSED ANNUAL COST**\n\n**HARDWARE REQUIREMENTS**\n• Lenovo Legion 5 15ACH6H: ₱39,999.00\n• HP Victus 16: ₱68,000.00\n• Asus Vivobook M5130: ₱45,000.00\n• MSI GF63 THIN: ₱59,995.00\n• Sony A6400 Camera: ₱47,999.00\n• Sony 50mm E-mount OSS Lens: ₱16,000.00\n• Peripheral devices (mice): ₱3,180.00\n**Total Hardware Investment: ₱280,173.00**\n\n**SOFTWARE REQUIREMENTS**\n• Figma: ₱680.00/month\n• Adobe Photoshop: ₱1,089.00/month\n• Adobe Illustrator: ₱1,295.00/month\n**Total Software Investment: ₱32,052.00**\n\n**SUBSCRIPTION COSTS**\n• Host Subscription: ₱611.17/year\n• Internet Connections (multiple providers): ₱4,094.00/month\n**Total Subscription Cost: ₱49,739.17**\n\n**CONSUMPTION COSTS**\n• Electricity Bills (multiple locations): ₱1,030.00/month\n**Total Consumption Cost: ₱12,360.00**\n\n**DEPLOYMENT COSTS**\n• Google Play Store Registration: ₱1,500.00 (one-time)\n\n**TOTAL PROJECT COST: ₱376,824.17**"
           }
         ]
       },
       {
         id: "chapter4",
-        title: "CHAPTER IV",
+        title: "CHAPTER IV - Methodology, Results, and Discussion",
         sections: [
           {
-            title: "Methodology, Results and Discussion",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
             title: "4.1 Requirements Analysis",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "The requirements analysis phase aimed to identify the functional and non-functional needs of the system. Collaboration was established with the local museum, and all relevant data was provided by the museum curators. This partnership focused on determining which cultural heritage content should be featured in the AR experience and how users would prefer to interact with the system.\n\nKey functional requirements included AR image recognition, 3D artifact rendering, location-based content, and audio narration in both English, Tagalog, and Cebuano. Non-functional requirements focused on mobile compatibility, a user-friendly interface, offline accessibility, and minimal loading times."
           },
           {
             title: "4.2 Requirements Documentation",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "The researchers introduce the software development tools, hardware specifications, and peopleware recommendations for the proposed Bohol Lens: Reminiscing the Past, Seeing the Culture — An Immersive Boholano Augmented Reality Experience.\n\n**Software Requirements**\n\n• **Operating System:** Windows 10 or later (for development); Android 9.0+ (for deployment on mobile devices)\n• **Development Engine:** Unity 6.1 LTS – used for building the 3D interface and managing AR scenes\n• **AR SDK:** Vuforia Engine – integrated with Unity for marker-based AR functionality\n• **Programming Language:** C# – used for scripting behaviors and interaction logic inside Unity\n• **3D Modeling Tool:** Blender – used for creating and optimizing 3D models of cultural artifacts\n• **Audio Editor:** Audacity – used to edit voice narrations and ambient sound effects\n• **Documentation Tool:** Google Documents\n• **Build Tools:** Android SDK & NDK – required for exporting the Unity project as a mobile Android APK\n• **AR Service:** Google Play Services for AR (ARCore) – required on Android phones for AR compatibility\n\n**Hardware Requirements**\n\n• **Processor:** Octa-core 2.0 GHz or higher ARM-based processor (Qualcomm Snapdragon 662 or equivalent)\n• **Memory:** 4 GB RAM or higher\n• **Display:** HD Display with at least 1280 x 720 resolution\n• **Storage:** At least 2 GB of free internal storage\n• **Operating System:** Android 9.0 (Pie) or higher\n• **Others:** The device must support ARCore and have Google Play Services for AR. Minimum 3000 mAh with power-saving features for extended AR usage.\n\n**Peopleware Recommendation**\n\n**Senior Developer:** The Senior Developer leads the development of the Bohol Lens AR mobile app. They are responsible for building AR features using Unity and Vuforia, scripting in C#, and ensuring smooth app performance. The role includes supervising junior developers, managing project sprints, and coordinating with the design and content team.\n\n**Junior Developer:** The Junior Developer supports the development of the Bohol Lens app by writing scripts, testing features, and fixing bugs. They assist with Unity and Vuforia tasks and work closely with the senior developer to implement AR content and app functionality.\n\n**UI/UX Designer & 3D Modeler:** This role is responsible for designing the user interface and experience of the Bohol Lens AR app, ensuring it's intuitive and visually appealing. They also create and optimize 3D models of museum artifacts for use in the AR environment using tools like Blender. The goal is to deliver an engaging, immersive experience for users.\n\n**Visitors:** The primary users of the Bohol Lens app. They use the AR features to scan museum markers, view 3D models, listen to cultural narrations, and explore interactive content related to the exhibits. The app is designed to enhance their museum experience through immersive, educational, and multilingual features."
           },
           {
-            title: "4.3 Research Design",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            title: "4.3 Design of Software, Systems, Products, and/or Processes",
+            content: "This phase includes the processes involved in the proposed system, such as Use Case diagrams, Use Case Narrative.\n\n**4.3.1 Use Case Diagram**\n\nThe UML Use Case Diagram of Bohol Lens shows the primary interactions between visitors and the AR system, illustrating the core functionality of marker scanning, content viewing, and multilingual navigation.\n\n**4.3.2 Use Case Narrative**\n\n**Use Case Name:** Scan Artifact Marker\n\n**Actor:** Visitor\n\n**Precondition:** The mobile device must have the Bohol Lens app installed and the user must be in the National Museum – Bohol where AR markers are present.\n\n**Description:** The visitor uses the Bohol Lens app to scan a designated AR marker placed near an exhibit. Once scanned, the app displays interactive information.\n\n**Course of Action:**\n\n**Step 1.** The visitor launches the mobile app and points the camera toward an exhibit's AR marker.\n\n**Step 2.** The app activates the camera and detects the AR marker using the Vuforia engine.\n\n**Step 3.** The visitor scans the marker.\n\n**Step 4.** The system retrieves and displays interactive AR content (e.g., 3D model, audio narration, or text overlay)."
           },
           {
             title: "4.4 Project Development Methodology",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "The researchers adopted the agile model approach in developing the proposed Bohol Lens. The development of the Bohol Lens followed the Agile methodology, which involves iterative cycles of planning, design, development, testing, deployment, and review. This allowed the researchers to adapt to changes, implement feedback efficiently, and ensure a user-centered design approach throughout the development of the AR-powered museum.\n\n**Planning Phase (100%)** - The researchers proposed Bohol Lens, an augmented reality-based museum application designed to preserve and promote Boholano culture through immersive interaction with digital exhibits. The system is exclusively developed for Android mobile devices using Unity and Vuforia. High-quality 3D models of cultural artifacts were created using a professional camera and photogrammetry techniques, followed by modeling. During this phase, all technical requirements were defined, including software tools, hardware, and mobile deployment limitations. A multilingual approach was also planned, integrating audio narration in English, Filipino, and Bisaya to cater to a broader audience, especially local users.\n\n**Designing Phase (100%)** - The researchers conducted interviews and collaborative discussions with curators from the National Museum of the Philippines - Bohol, cultural experts, and IT professionals to gather user requirements and expectations. The mobile interface was designed with simplicity and clarity in mind, ensuring smooth navigation and easy access to AR content. Wireframes and mockups were created for the AR views, audio controls, and language selection interface. Special attention was given to usability on various Android screen sizes and user environments. UI components were optimized for mobile interaction, and interface elements were prepared to support dynamic switching between English, Filipino, and Bisaya narrations.\n\n**Development Phase (100%)** - The development phase focused on building the AR mobile application using Unity, integrated with the Vuforia SDK for image and marker-based tracking. Photogrammetry-generated 3D models were imported and optimized for real-time rendering on Android devices. Each AR scene was paired with multilingual audio narrations, and a language toggle feature was implemented to allow users to choose their preferred language before viewing the artifacts. All code and assets were version-controlled using GitHub, ensuring maintainability and collaboration during agile sprints. The development also considered offline functionality to ensure accessibility without internet connectivity.\n\n**Testing Phase (100%)** - During the testing phase, the mobile application underwent functional, compatibility, and usability testing across a variety of Android smartphones. AR tracking, model placement accuracy, performance under different lighting conditions, and audio playback for all three languages were thoroughly tested. Bugs and inconsistencies identified during testing were documented and resolved in subsequent development cycles.\n\n**Deployment Phase (100%)** - The final application was packaged and deployed exclusively as an Android APK file. The app was tested on various Android versions to ensure compatibility and performance. All assets, including 3D models and multilingual audio files, were bundled into the APK to support offline use. The deployment process involved direct installation on devices for demonstrations and educational use in schools and public exhibits. The app required no internet connection, making it suitable for remote areas with limited connectivity. The deployment confirmed the system met all functional requirements, including AR stability and multilingual accessibility.\n\n**Review Phase (100%)** - In the review phase, the researchers evaluated the overall performance, usability, and impact of the deployed mobile application. Feedback from initial users indicated strong appreciation for the inclusion of Bisaya and Filipino narrations, which made the experience more engaging and culturally authentic. Minor usability issues and enhancement suggestions, such as clearer audio icons and additional visual guides, were documented for future improvements. The researchers concluded that the mobile-only AR approach was practical for their target audience and would consider future updates to include more artifacts, interactive elements, and possibly additional local dialects."
           },
           {
             title: "4.5 System Architecture",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "The system architecture of Bohol Lens is divided into the following layers:\n\n**Mobile Application Layer:** The frontend of the system, built using Unity and Vuforia SDK, is responsible for rendering the AR experience, detecting markers, and displaying multimedia content.\n\n**Content Layer:** This layer comprises 3D models, audio narrations, and historical texts stored within the app or on a local file system. No real-time internet access is required, allowing for offline use within the museum.\n\n**Device Sensor Layer:** Utilizes smartphone cameras and sensors for AR functionality, including camera feed processing, marker recognition, and spatial tracking.\n\nThis architecture is designed to function entirely offline, making it suitable for areas with limited or no internet connectivity. The system ensures smooth performance on Android devices while maintaining high-quality AR experiences through optimized content delivery and efficient resource management."
           },
           {
             title: "4.6 Prototype Design",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            title: "4.6.1 Prototype Design Front",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            title: "4.6.2 Prototype Design Admin",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          },
-          {
-            title: "4.6.3 Prototype Design User",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            content: "Design tools like Figma were used for initial wireframing. The prototype adheres to minimalist design principles, prioritizing ease of use and cultural relevance.\n\nThe wireframe designs include:\n\n• **Figure 4.1** - Wireframe design of the Bohol Lens app prototype for first state portrait mode\n• **Figure 4.2** - Wireframe design of the Bohol Lens app prototype for full screen portrait mode\n• **Figure 4.3** - Wireframe design of the Bohol Lens app prototype for first state landscape mode\n• **Figure 4.4** - Wireframe design of the Bohol Lens app prototype for full screen landscape mode\n\nEach design focuses on:\n\n• **Intuitive Navigation** - Clear, accessible interface elements that guide users through the AR experience\n• **Cultural Authenticity** - Design elements that reflect Boholano heritage and cultural identity\n• **Cross-Platform Compatibility** - Responsive design that works seamlessly across different Android device sizes and orientations\n• **AR Integration** - Seamless integration of camera views with overlay content for optimal user experience\n• **Multilingual Support** - Interface elements designed to accommodate English, Filipino, and Bisaya language options\n\nThe prototype design ensures that users can easily navigate the application while maintaining focus on the cultural content and AR experiences that define the Bohol Lens project."
           }
         ]
       }
@@ -185,7 +153,7 @@ export const capstones: Capstone[] = [
     title: "Capstone 2",
     description: "A comprehensive analytics platform for measuring and optimizing AR experience effectiveness in cultural heritage institutions.",
     status: "in-progress",
-    timeline: "March 2024 - August 2024",
+    timeline: "July 12, 2025 - December 2025",
     chapters: []
   }
 ];

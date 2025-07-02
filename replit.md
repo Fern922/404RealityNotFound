@@ -105,6 +105,9 @@ Changelog:
 - July 02, 2025. Removed contributions section from team member modals to simplify profile display
 - July 02, 2025. Updated Capstone 1 timeline from "September 2023 - February 2024" to "June 2 - July 12"
 - July 02, 2025. Replaced development process section with original detailed Agile methodology content including 6 phases: Planning, Designing, Development, Testing, Deployment, and Review
+- July 02, 2025. Updated Capstone 2 timeline to "July 12, 2025 - December 2025" 
+- July 02, 2025. Simplified team member cards by removing contributing paragraph, keeping only name, role, and view profile button
+- July 02, 2025. Replaced all capstone chapter content with authentic academic content from "Bohol Lens: Reminiscing the Past, Seeing the Culture" document including comprehensive Introduction, Literature Review, Technical Background, and Methodology chapters
 ```
 
 ## User Preferences

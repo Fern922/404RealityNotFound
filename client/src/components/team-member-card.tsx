@@ -45,9 +45,7 @@ const TeamMemberCard = ({ member, delay, onClick }: TeamMemberCardProps) => {
             </div>
             <h3 className="text-lg font-semibold mb-3">{member.name}</h3>
             <p className="text-sm mb-4">{member.role}</p>
-            <p className="text-xs opacity-90">
-              Contributing to the AR Museum Portal project with expertise in modern web technologies and cultural preservation.
-            </p>
+
             <div className="mt-4">
               <button className="px-4 py-2 bg-white bg-opacity-20 rounded-lg text-xs font-medium hover:bg-opacity-30 transition-all">
                 View Profile
