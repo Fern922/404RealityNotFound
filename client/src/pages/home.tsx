@@ -236,7 +236,61 @@ const Home = () => {
               </button>
             </div>
 
-            {/* mobile menu etc... remains unchanged */}
+            {/* Mobile Menu */}
+            <div className="md:hidden relative flex items-center space-x-2">
+              {/* 🌙 Toggle in mobile */}
+              <button
+                onClick={toggleTheme}
+                className="p-2 rounded-full bg-gray-100 dark:bg-[var(--muted)] text-gray-700 dark:text-[var(--foreground)] hover:bg-gray-200 dark:hover:bg-[var(--muted-foreground)] transition-colors"
+                aria-label="Toggle Theme"
+              >
+                <i className={`fas ${isDark ? "fa-sun" : "fa-moon"}`}></i>
+              </button>
+
+              <button
+                className="text-gray-600 dark:text-[var(--muted-foreground)]"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                <i className="fas fa-bars text-xl"></i>
+              </button>
+
+              {isMobileMenuOpen && (
+                <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 z-50 bg-white dark:bg-[var(--popover)]">
+                  {["home", "about", "team", "process", "contact"].map(
+                    (item) => (
+                      <button
+                        key={item}
+                        onClick={() => {
+                          scrollToSection(item);
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className={`block w-full text-left px-4 py-2 capitalize font-medium ${
+                          activeSection === item
+                            ? "text-blue-500"
+                            : "text-gray-600 hover:text-blue-500 dark:text-[var(--muted-foreground)] dark:hover:text-[var(--primary)]"
+                        }`}
+                      >
+                        {item}
+                      </button>
+                    )
+                  )}
+                  <div className="border-t border-gray-200 dark:border-[var(--border)] mt-1 pt-1">
+                    <button
+                      onClick={() => openCapstoneModal(1)}
+                      className="block w-full text-left px-4 py-2 text-gray-600 dark:text-[var(--muted-foreground)] hover:text-blue-500 dark:hover:text-[var(--primary)]"
+                    >
+                      Capstone 1
+                    </button>
+                    <button
+                      onClick={() => openCapstoneModal(2)}
+                      className="block w-full text-left px-4 py-2 text-gray-600 dark:text-[var(--muted-foreground)] hover:text-blue-500 dark:hover:text-[var(--primary)]"
+                    >
+                      Capstone 2
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </nav>
