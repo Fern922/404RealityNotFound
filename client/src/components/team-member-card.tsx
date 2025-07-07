@@ -54,9 +54,9 @@ const TeamMemberCard = ({ member, delay, onClick }: TeamMemberCardProps) => {
               backgroundPosition: "center",
             }}
           >
-            <div className="ar-icon mb-4">
+            {/* <div className="ar-icon mb-4">
               <i className="fas fa-cube text-3xl"></i>
-            </div>
+            </div> */}
             <h3 className="text-lg font-semibold mb-3">{member.name}</h3>
             <p className="text-sm mb-4">{member.role}</p>
 
