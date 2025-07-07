@@ -140,97 +140,166 @@ const Home = () => {
     setIsMobileMenuOpen(false);
   };
 
+  const Navbar = ({
+  scrollToSection,
+  activeSection,
+  openCapstoneModal,
+}: {
+  scrollToSection: (sectionId: string) => void;
+  activeSection: string;
+  openCapstoneModal: (id: number) => void;
+}) => {
+  const [isDocsOpen, setIsDocsOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+  const docsMenuRef = useRef(null);
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme === "dark") {
+      document.documentElement.classList.add("dark");
+      setIsDark(true);
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const enableDark = !isDark;
+    document.documentElement.classList.toggle("dark", enableDark);
+    localStorage.setItem("theme", enableDark ? "dark" : "light");
+    setIsDark(enableDark);
+  };
+
   return (
     <div className="min-h-screen relative">
       <ThreeJSBackground />
       
       {/* Navigation */}
-      <nav className="fixed w-full bg-white bg-opacity-90 shadow-sm z-50">
-        <div className="container mx-auto px-6 py-4">
-          <div className="flex justify-between items-center">
-            <div className="flex items-center">
-              <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold mr-3">
-                404
-              </div>
-              <span className="text-xl font-semibold">Reality Not Found</span>
+      <nav className="fixed w-full shadow-sm z-50 bg-white dark:bg-[var(--background)] bg-opacity-90 dark:bg-opacity-95">
+      <div className="container mx-auto px-6 py-4">
+        <div className="flex justify-between items-center">
+          {/* Logo */}
+          <div className="flex items-center">
+            <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold mr-3">
+              404
             </div>
-            <div className="hidden md:flex space-x-8 items-center">
-              {['home', 'about', 'team', 'process', 'contact'].map((item) => (
-                <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className={`capitalize font-medium transition-colors ${activeSection === item ? 'text-blue-500' : 'text-gray-600 hover:text-blue-500'}`}
-                >
-                  {item}
-                </button>
-              ))}
-              <div className="relative" ref={docsMenuRef}>
-                <button 
-                  onClick={() => setIsDocsOpen(!isDocsOpen)}
-                  className="capitalize font-medium text-gray-600 hover:text-blue-500 transition-colors flex items-center"
-                >
-                  Documentation
-                  <i className={`fas fa-chevron-down ml-1 text-xs transition-transform ${isDocsOpen ? 'transform rotate-180' : ''}`}></i>
-                </button>
-                {isDocsOpen && (
-                  <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
-                    <button 
-                      onClick={() => openCapstoneModal(1)}
-                      className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-500"
-                    >
-                      Capstone 1
-                    </button>
-                    <button 
-                      onClick={() => openCapstoneModal(2)}
-                      className="block w-full text-left px-4 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-500"
-                    >
-                      Capstone 2
-                    </button>
-                  </div>
-                )}
-              </div>
-            </div>
-            <div className="md:hidden relative">
-              <button 
-                className="text-gray-600"
-                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            <span className="text-xl font-semibold text-black dark:text-[var(--foreground)]">
+              Reality Not Found
+            </span>
+          </div>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-8 items-center">
+            {["home", "about", "team", "process", "contact"].map((item) => (
+              <button
+                key={item}
+                onClick={() => scrollToSection(item)}
+                className={`capitalize font-medium transition-colors ${
+                  activeSection === item
+                    ? "text-blue-500"
+                    : "text-gray-600 hover:text-blue-500 dark:text-[var(--muted-foreground)] dark:hover:text-[var(--primary)]"
+                }`}
               >
-                <i className="fas fa-bars text-xl"></i>
+                {item}
               </button>
-              {isMobileMenuOpen && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50">
-                  {['home', 'about', 'team', 'process', 'contact'].map((item) => (
-                    <button
-                      key={item}
-                      onClick={() => {
-                        scrollToSection(item);
-                        setIsMobileMenuOpen(false);
-                      }}
-                      className={`block w-full text-left px-4 py-2 capitalize font-medium ${activeSection === item ? 'text-blue-500' : 'text-gray-600 hover:text-blue-500'}`}
-                    >
-                      {item}
-                    </button>
-                  ))}
-                  <div className="border-t border-gray-200 mt-1 pt-1">
-                    <button 
-                      onClick={() => openCapstoneModal(1)}
-                      className="block w-full text-left px-4 py-2 text-gray-600 hover:text-blue-500"
-                    >
-                      Capstone 1
-                    </button>
-                    <button 
-                      onClick={() => openCapstoneModal(2)}
-                      className="block w-full text-left px-4 py-2 text-gray-600 hover:text-blue-500"
-                    >
-                      Capstone 2
-                    </button>
-                  </div>
+            ))}
+
+            {/* Docs dropdown */}
+            <div className="relative" ref={docsMenuRef}>
+              <button
+                onClick={() => setIsDocsOpen(!isDocsOpen)}
+                className="capitalize font-medium text-gray-600 hover:text-blue-500 dark:text-[var(--muted-foreground)] dark:hover:text-[var(--primary)] transition-colors flex items-center"
+              >
+                Documentation
+                <i
+                  className={`fas fa-chevron-down ml-1 text-xs transition-transform ${
+                    isDocsOpen ? "rotate-180" : ""
+                  }`}
+                ></i>
+              </button>
+              {isDocsOpen && (
+                <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 z-50 bg-white dark:bg-[var(--popover)]">
+                  <button
+                    onClick={() => openCapstoneModal(1)}
+                    className="block w-full text-left px-4 py-2 text-gray-700 dark:text-[var(--popover-foreground)] hover:bg-blue-50 dark:hover:bg-[var(--muted)] hover:text-blue-500 dark:hover:text-[var(--primary)]"
+                  >
+                    Capstone 1
+                  </button>
+                  <button
+                    onClick={() => openCapstoneModal(2)}
+                    className="block w-full text-left px-4 py-2 text-gray-700 dark:text-[var(--popover-foreground)] hover:bg-blue-50 dark:hover:bg-[var(--muted)] hover:text-blue-500 dark:hover:text-[var(--primary)]"
+                  >
+                    Capstone 2
+                  </button>
                 </div>
               )}
             </div>
+
+            {/* 🌙 Theme Toggle */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full bg-gray-100 dark:bg-[var(--muted)] text-gray-700 dark:text-[var(--foreground)] hover:bg-gray-200 dark:hover:bg-[var(--muted-foreground)] transition-colors"
+              aria-label="Toggle Theme"
+            >
+              <i className={`fas ${isDark ? "fa-sun" : "fa-moon"}`}></i>
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          <div className="md:hidden relative flex items-center space-x-2">
+            {/* 🌙 Toggle in mobile */}
+            <button
+              onClick={toggleTheme}
+              className="p-2 rounded-full bg-gray-100 dark:bg-[var(--muted)] text-gray-700 dark:text-[var(--foreground)] hover:bg-gray-200 dark:hover:bg-[var(--muted-foreground)] transition-colors"
+              aria-label="Toggle Theme"
+            >
+              <i className={`fas ${isDark ? "fa-sun" : "fa-moon"}`}></i>
+            </button>
+
+            <button
+              className="text-gray-600 dark:text-[var(--muted-foreground)]"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              <i className="fas fa-bars text-xl"></i>
+            </button>
+
+            {isMobileMenuOpen && (
+              <div className="absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 z-50 bg-white dark:bg-[var(--popover)]">
+                {["home", "about", "team", "process", "contact"].map((item) => (
+                  <button
+                    key={item}
+                    onClick={() => {
+                      scrollToSection(item);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className={`block w-full text-left px-4 py-2 capitalize font-medium ${
+                      activeSection === item
+                        ? "text-blue-500"
+                        : "text-gray-600 hover:text-blue-500 dark:text-[var(--muted-foreground)] dark:hover:text-[var(--primary)]"
+                    }`}
+                  >
+                    {item}
+                  </button>
+                ))}
+                <div className="border-t border-gray-200 dark:border-[var(--border)] mt-1 pt-1">
+                  <button
+                    onClick={() => openCapstoneModal(1)}
+                    className="block w-full text-left px-4 py-2 text-gray-600 dark:text-[var(--muted-foreground)] hover:text-blue-500 dark:hover:text-[var(--primary)]"
+                  >
+                    Capstone 1
+                  </button>
+                  <button
+                    onClick={() => openCapstoneModal(2)}
+                    className="block w-full text-left px-4 py-2 text-gray-600 dark:text-[var(--muted-foreground)] hover:text-blue-500 dark:hover:text-[var(--primary)]"
+                  >
+                    Capstone 2
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
       
       {/* Hero Section */}
       <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
