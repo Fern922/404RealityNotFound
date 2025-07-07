@@ -46,7 +46,14 @@ const TeamMemberCard = ({ member, delay, onClick }: TeamMemberCardProps) => {
               </p>
             </div>
           </div>
-          <div className="flip-card-back">
+          <div
+            className="flip-card-back"
+            style={{
+              backgroundImage: `url(${member.image})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <div className="ar-icon mb-4">
               <i className="fas fa-cube text-3xl"></i>
             </div>
