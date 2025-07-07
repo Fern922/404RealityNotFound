@@ -6,12 +6,18 @@ import ChapterDropdown from "./chapter-dropdown";
 interface CapstoneModalProps {
   capstone: Capstone | null;
   onClose: () => void;
+  modalType: "capstone1" | "capstone2";
 }
 
-const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
-  const [activeSection, setActiveSection] = useState("overview");
+interface Section {
+  id: string;
+  title: string;
+}
+
+const CapstoneModal = ({ capstone, onClose, modalType }: CapstoneModalProps) => {
+  const [activeSection, setActiveSection] = useState<string>("overview");
   const [openChapters, setOpenChapters] = useState<Record<string, boolean>>({});
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState<boolean>(false);
 
   if (!capstone) return null;
 
@@ -26,13 +32,20 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
     }, 150);
   };
 
-  const sections = [
-    { id: "overview", title: "Overview" },
-    { id: "chapters", title: "Chapters" },
-    { id: "resources", title: "Resources" },
-  ];
+  const sections: Section[] =
+    modalType === "capstone1"
+      ? [
+          { id: "overview", title: "Overview" },
+          { id: "chapters", title: "Chapters" },
+          { id: "resources", title: "Resources" },
+        ]
+      : [
+          { id: "overview", title: "Overview" },
+          { id: "team", title: "Team Members" },
+          { id: "report", title: "Final Report" },
+        ];
 
-  const renderContent = () => {
+  const renderContent = (): JSX.Element | null => {
     switch (activeSection) {
       case "overview":
         return (
@@ -157,6 +170,26 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
           </div>
         );
 
+      case "team":
+        return (
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-6 text-gray-800">
+              Team Members (Capstone 2)
+            </h3>
+            <p className="text-gray-600">Details about the project team...</p>
+          </div>
+        );
+
+      case "report":
+        return (
+          <div className="p-6">
+            <h3 className="text-xl font-semibold mb-6 text-gray-800">
+              Final Report (Capstone 2)
+            </h3>
+            <p className="text-gray-600">Project report and findings...</p>
+          </div>
+        );
+
       default:
         return null;
     }
@@ -166,7 +199,9 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 modal-backdrop flex items-center justify-center z-50 p-4">
       <div className="bg-white rounded-xl max-w-4xl w-full max-h-[90vh] overflow-hidden shadow-2xl modal-content">
         <div className="flex justify-between items-center p-6 border-b border-gray-200">
-          <h2 className="text-2xl font-bold text-gray-800">{capstone.title}</h2>
+          <h2 className="text-2xl font-bold text-gray-800">
+            {modalType === "capstone1" ? "Capstone 1" : "Capstone 2"} — {capstone.title}
+          </h2>
           <button
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700 p-2 hover:bg-gray-100 rounded-lg transition-colors"
