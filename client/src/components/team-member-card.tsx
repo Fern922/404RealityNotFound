@@ -46,28 +46,17 @@ const TeamMemberCard = ({ member, delay, onClick }: TeamMemberCardProps) => {
               </p>
             </div>
           </div>
-          <div
-            className="flip-card-back bg-cover bg-center text-white relative rounded-xl overflow-hidden"
-            style={{ backgroundImage: `url(${member.image})` }}
-          >
-            {/* Overlay for readability */}
-            <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+          <div className="flip-card-back">
+            <div className="ar-icon mb-4">
+              <i className="fas fa-cube text-3xl"></i>
+            </div>
+            <h3 className="text-lg font-semibold mb-3">{member.name}</h3>
+            <p className="text-sm mb-4">{member.role}</p>
 
-            {/* Content on top of overlay */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full p-4">
-              <div className="ar-icon mb-4">
-                <i className="fas fa-cube text-3xl"></i>
-              </div>
-              <h3 className="text-lg font-semibold mb-3 text-center">
-                {member.name}
-              </h3>
-              <p className="text-sm mb-4">{member.role}</p>
-
-              <div className="mt-4">
-                <button className="px-4 py-2 bg-white bg-opacity-20 rounded-lg text-xs font-medium hover:bg-opacity-30 transition-all">
-                  View Profile
-                </button>
-              </div>
+            <div className="mt-4">
+              <button className="px-4 py-2 bg-white bg-opacity-20 rounded-lg text-xs font-medium hover:bg-opacity-30 transition-all">
+                View Profile
+              </button>
             </div>
           </div>
         </div>
