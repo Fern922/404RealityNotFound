@@ -19,7 +19,7 @@ const TeamMemberCard = ({ member, delay, onClick }: TeamMemberCardProps) => {
           <div className="flip-card-front">
             <div className="mb-4">
               {member.image ? (
-                <div className="w-25 h-25 rounded-full mx-auto shadow-lg overflow-hidden">
+                <div className="w-16 h-16 rounded-full mx-auto shadow-lg overflow-hidden">
                   <img
                     src={member.image}
                     alt={member.name}
