@@ -532,7 +532,7 @@ const Home = () => {
                   <i className="fas fa-envelope text-2xl text-white"></i>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <p className="text-gray-300">contact@armuseum.ph</p>
+                <p className="text-gray-300">404realitynotfound@gmail.com</p>
               </div>
               
               <div className="fade-in" style={{ animationDelay: "0.1s" }}>
@@ -540,7 +540,7 @@ const Home = () => {
                   <i className="fas fa-phone text-2xl text-white"></i>
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Phone</h3>
-                <p className="text-gray-300">+63 123 456 7890</p>
+                <p className="text-gray-300">+63 945 519 2009</p>
               </div>
               
               <div className="fade-in" style={{ animationDelay: "0.2s" }}>
@@ -554,7 +554,7 @@ const Home = () => {
             
             <div className="text-center">
               <p className="text-gray-400 mb-8">
-                © 2024 AR Museum Portal - National Museum of the Philippines, Bohol. All rights reserved.
+                © 2025 AR Museum Portal - National Museum of the Philippines - Bohol. All rights reserved.
               </p>
               <div className="flex justify-center space-x-6">
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">

@@ -26,8 +26,8 @@ const ModalNavbar = ({ activeSection, onSectionChange, sections }: ModalNavbarPr
 
   return (
     <nav className="bg-white dark:bg-[#09090b] border-b border-gray-200 dark:border-gray-700 px-6 py-4 sticky top-0 z-10">
-      <div className="flex flex-wrap items-center gap-2 justify-between">
-        <div className="flex flex-wrap gap-2">
+      <div className="flex justify-between items-center flex-wrap gap-2">
+        <div className="flex gap-2 flex-wrap">
           {sections.map((section) => (
             <button
               key={section.id}
@@ -45,7 +45,7 @@ const ModalNavbar = ({ activeSection, onSectionChange, sections }: ModalNavbarPr
 
         <button
           onClick={toggleTheme}
-          className="ml-auto p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+          className="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
           aria-label="Toggle Theme"
         >
           <i className={`fas ${isDark ? "fa-sun" : "fa-moon"} text-lg`} />
