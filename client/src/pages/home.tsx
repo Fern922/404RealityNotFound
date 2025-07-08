@@ -8,11 +8,11 @@ import { capstones, Capstone } from '@/data/capstone-data';
 
 const MultimediaCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [
-    { id: 1, title: "AR Artifact Visualization", description: "3D models of museum artifacts", image: "https://drive.google.com/file/d/1UZ_UIjkOb8PriPHdusMvRFQzALss_xsq/view?usp=sharing" },
-    { id: 2, title: "Historical Reenactment", description: "Bringing history to life", image: "https://via.placeholder.com/800x500?text=Historical+Scene" },
-    { id: 3, title: "Interactive Exhibit", description: "Visitor engagement features", image: "https://via.placeholder.com/800x500?text=Interactive+Exhibit" }
-  ];
+    const slides = [
+      { id: 1, title: "AR Artifact Visualization", description: "3D models of museum artifacts", image: "https://drive.google.com/uc?export=view&id=1UZ_UIjkOb8PriPHdusMvRFQzALss_xsq" },
+      { id: 2, title: "Historical Reenactment", description: "Bringing history to life", image: "https://via.placeholder.com/800x500?text=Historical+Scene" },
+      { id: 3, title: "Interactive Exhibit", description: "Visitor engagement features", image: "https://via.placeholder.com/800x500?text=Interactive+Exhibit" }
+    ];
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
