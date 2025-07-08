@@ -6,7 +6,7 @@ import TeamMemberCard from '@/components/team-member-card';
 import { teamMembers, TeamMember } from '@/data/team-data';
 import { capstones, Capstone } from '@/data/capstone-data';
 import { i } from 'node_modules/vite/dist/node/types.d-aGj9QkWt';
-import { ar1 } from '../assets/ar_1.jpg';
+import  ar1  from '../assets/ar_1.jpg';
 
 const MultimediaCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -292,18 +292,30 @@ const Home = () => {
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 fade-in">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Project Promotional Video</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              Project Promotional Video
+            </h2>
             <div className="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
             <p className="max-w-3xl mx-auto text-lg text-gray-600">
-              Watch our promotional video to learn more about the Bohol Lens experience.
+              Watch our promotional video to learn more about the Bohol Lens
+              experience.
             </p>
           </div>
+
           <div className="max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg fade-in">
-            <div className="aspect-w-16 aspect-h-9 bg-gray-200 flex items-center justify-center h-96">
-              <div className="text-center p-8">
-                <i className="fas fa-play-circle text-6xl text-blue-500 mb-4"></i>
-                <p className="text-gray-600">Promotional video coming soon</p>
-              </div>
+            <div
+              className="relative"
+              style={{ paddingTop: "56.25%" /* 16:9 Aspect Ratio */ }}
+            >
+              <iframe
+                className="absolute top-0 left-0 w-full h-full"
+                src="https://www.youtube.com/embed/32T3WeCnYa0?si=CMexKcAO1SwKfH5t&amp;controls=0"
+                title="Bohol Lens Promotional Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
