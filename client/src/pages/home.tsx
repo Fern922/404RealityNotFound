@@ -7,13 +7,15 @@ import { teamMembers, TeamMember } from '@/data/team-data';
 import { capstones, Capstone } from '@/data/capstone-data';
 import { i } from 'node_modules/vite/dist/node/types.d-aGj9QkWt';
 import  ar1  from '../assets/ar_1.jpg';
+import  ar2  from '../assets/ar_1.jpg';
+import  ar3  from '../assets/ar_1.jpg';
 
 const MultimediaCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
     const slides = [
       { id: 1, title: "AR Artifact Visualization", description: "3D models of museum artifacts", image: ar1 },
-      { id: 2, title: "Historical Reenactment", description: "Bringing history to life", image: "https://via.placeholder.com/800x500?text=Historical+Scene" },
-      { id: 3, title: "Interactive Exhibit", description: "Visitor engagement features", image: "https://via.placeholder.com/800x500?text=Interactive+Exhibit" }
+      { id: 2, title: "Historical Reenactment", description: "Bringing history to life", image: ar2 },
+      { id: 3, title: "Interactive Exhibit", description: "Visitor engagement features", image: ar3 }
     ];
 
   const nextSlide = () => {

@@ -63,7 +63,7 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
                 <span
                   className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium ${
                     capstone.status === "completed"
-                      ? "bg-emerald-100 text-emerald-800"
+                      ? "bg-emerald-100 text-emerald-800" : capstone.status === "to defend" ? "bg-red-100 text-orange-800"
                       : "bg-yellow-100 text-yellow-800"
                   }`}
                 >
