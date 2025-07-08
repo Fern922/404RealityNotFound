@@ -7,8 +7,8 @@ import { teamMembers, TeamMember } from '@/data/team-data';
 import { capstones, Capstone } from '@/data/capstone-data';
 import { i } from 'node_modules/vite/dist/node/types.d-aGj9QkWt';
 import  ar1  from '../assets/ar_1.jpg';
-import  ar2  from '../assets/ar_1.jpg';
-import  ar3  from '../assets/ar_1.jpg';
+import  ar2  from '../assets/ar_2.jpg';
+import  ar3  from '../assets/ar_3.jpg';
 
 const MultimediaCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
