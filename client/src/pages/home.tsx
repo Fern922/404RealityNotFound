@@ -412,7 +412,7 @@ const Home = () => {
                       ? 'bg-emerald-100 text-emerald-800' 
                       : 'bg-yellow-100 text-yellow-800'
                   }`}>
-                    {capstone.status === 'completed' ? 'Completed' : 'In Progress'}
+                    {capstone.status === 'completed' ? 'Completed' : capstone.status === 'to defend' ? 'To Defend': 'In Progress'}
                   </span>
                 </div>
                 
