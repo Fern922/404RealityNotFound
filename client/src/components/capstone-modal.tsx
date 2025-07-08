@@ -119,7 +119,12 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
               Project Resources
             </h3>
             <div className="grid gap-4">
-              <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
+               <a
+                href="hhttps://docs.google.com/document/d/11yD_eFhWG-TYzCGchZZSLIfjexpJPy5KBSnJppi6drg/edit?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+              >
                 <div className="flex items-center mb-2">
                   <i className="fas fa-file-pdf text-red-500 mr-3"></i>
                   <span className="font-medium">Project Documentation</span>
@@ -127,7 +132,7 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
                 <p className="text-gray-600 text-sm">
                   Complete project documentation and technical specifications
                 </p>
-              </div>
+              </a>
 
               <div className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
                 <div className="flex items-center mb-2">
