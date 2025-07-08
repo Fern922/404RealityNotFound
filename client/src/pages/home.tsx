@@ -9,7 +9,7 @@ import { capstones, Capstone } from '@/data/capstone-data';
 const MultimediaCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    { id: 1, title: "AR Artifact Visualization", description: "3D models of museum artifacts", image: "https://via.placeholder.com/800x500?text=AR+Artifact" },
+    { id: 1, title: "AR Artifact Visualization", description: "3D models of museum artifacts", image: "https://drive.google.com/file/d/1UZ_UIjkOb8PriPHdusMvRFQzALss_xsq/view?usp=sharing" },
     { id: 2, title: "Historical Reenactment", description: "Bringing history to life", image: "https://via.placeholder.com/800x500?text=Historical+Scene" },
     { id: 3, title: "Interactive Exhibit", description: "Visitor engagement features", image: "https://via.placeholder.com/800x500?text=Interactive+Exhibit" }
   ];
@@ -554,7 +554,7 @@ const Home = () => {
             
             <div className="text-center">
               <p className="text-gray-400 mb-8">
-                © 2025 AR Museum Portal - National Museum of the Philippines - Bohol. All rights reserved.
+                © 2025 Bohol Lens - National Museum of the Philippines - Bohol. All rights reserved.
               </p>
               <div className="flex justify-center space-x-6">
                 <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
