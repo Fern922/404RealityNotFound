@@ -153,11 +153,16 @@ const Home = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <div className="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold mr-3">
-                404
-              </div>
-              <span className="text-xl font-semibold">Reality Not Found</span>
+              <button onClick={() => scrollToSection('home')} className="flex items-center">
+                <img
+                  src="/logo.png" 
+                  alt="Logo"
+                  className="w-10 h-10 mr-3"
+                />
+                <span className="text-xl font-semibold">Reality Not Found</span>
+              </button>
             </div>
+
             <div className="hidden md:flex space-x-8 items-center">
               {['home', 'about', 'team', 'process', 'contact'].map((item) => (
                 <button
@@ -311,7 +316,7 @@ const Home = () => {
             >
               <iframe
                 className="absolute top-0 left-0 w-full h-full"
-                src="https://www.youtube.com/embed/32T3WeCnYa0?si=CMexKcAO1SwKfH5t&amp;controls=0"
+                src="https://www.youtube.com/watch?v=aBrAFqP-zOg"
                 title="Bohol Lens Promotional Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
