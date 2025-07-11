@@ -79,7 +79,7 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
       case "chapters":
         return (
           <div className="p-6">
-            {capstone.status === "completed" ? (
+            {capstone.status === "completed" || capstone.status === "to defend"? (
               <div>
                 <h3 className="text-xl font-semibold mb-6 text-gray-800">
                   Chapter Structure
