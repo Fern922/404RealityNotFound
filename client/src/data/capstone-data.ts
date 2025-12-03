@@ -23,7 +23,7 @@ export const capstones: Capstone[] = [
     id: 1,
     title: "Capstone 1",
     description: "Bohol Lens: Reminiscing the Past, Seeing the Culture — An Immersive Boholano Augmented Reality Experience. An innovative augmented reality system designed to enhance visitor experience at the National Museum of the Philippines - Bohol through interactive digital exhibits and immersive storytelling.",
-    status: "to defend",
+    status: "completed",
     timeline: "June 2 - July 12, 2025",
     chapters: [
       {
@@ -130,6 +130,8 @@ export const capstones: Capstone[] = [
     description: "A comprehensive analytics platform for measuring and optimizing AR experience effectiveness in cultural heritage institutions.",
     status: "in-progress",
     timeline: "July 12, 2025 - December 2025",
-    chapters: []
+    chapters: [
+      
+    ]
   }
 ];
