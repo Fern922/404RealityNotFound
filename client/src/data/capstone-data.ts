@@ -66,11 +66,11 @@ export const capstones: Capstone[] = [
         sections: [
           {
             title: "2.1 International Studies",
-            content: "This chapter reviews pertinent literature and studies that are related to the current research, examining both international and local studies that have explored the use of Augmented Reality in cultural heritage preservation and museum experiences."
+            content: ""
           },
           {
             title: "2.2 Local Studies (Philippines)",
-            content: "This section examines local Philippine studies that have explored the application of Augmented Reality technology in cultural heritage preservation and educational contexts within the country."
+            content: ""
           },
         ]
       },
@@ -119,6 +119,14 @@ export const capstones: Capstone[] = [
           {
             title: "4.6 Prototype Design",
             content: ""
+          },
+          {
+            title: "4.7 Characteristics of the Respondents",
+            content: ""
+          },
+          {
+            title: "4.8 Interpretation of Data",
+            content: ""
           }
         ]
       }
@@ -129,9 +137,34 @@ export const capstones: Capstone[] = [
     title: "Capstone 2",
     description: "A comprehensive analytics platform for measuring and optimizing AR experience effectiveness in cultural heritage institutions.",
     status: "in-progress",
-    timeline: "July 12, 2025 - December 2025",
+    timeline: "July 12, 2025 - December 5, 2025",
     chapters: [
-      
+      {
+        id: "chapter5",
+        title: "CHAPTER V - SUMMARY, CONCLUSIONS, AND RECOMMENDATIONS",
+        sections: [
+          {
+            title: "5.1 Summary of Findings", 
+            content: ""
+          },
+          {
+            title: "5.2 Conclusion",
+            content: ""
+          },
+          {
+            title: "5.3 Recommendations",
+            content: ""
+          },
+          {
+            title: "References",
+            content: ""
+          },
+          {
+            title: "Appendices",
+            content: ""
+          }
+        ]
+      }
     ]
   }
 ];
