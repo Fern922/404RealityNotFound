@@ -100,13 +100,32 @@ const CapstoneModal = ({ capstone, onClose }: CapstoneModalProps) => {
                 ))}
               </div>
             ) : (
-              <div className="text-center py-32">
-                <div className="ar-icon mb-6">
-                  <i className="fas fa-tools text-6xl text-ar-blue-400"></i>
-                </div>
-                <h3 className="text-3xl font-semibold text-gray-800 mb-4">
-                  Capstone 2 is still a work in progress
+              // <div className="text-center py-32">
+              //   <div className="ar-icon mb-6">
+              //     <i className="fas fa-tools text-6xl text-ar-blue-400"></i>
+              //   </div>
+              //   <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+              //     Capstone 2 is still a work in progress
+              //   </h3>
+              // </div>
+              <div>
+                <h3 className="text-xl font-semibold mb-6 text-gray-800">
+                  Chapter Structure
                 </h3>
+                {loading && (
+                  <div className="flex items-center justify-center py-4">
+                    <div className="loading-spinner"></div>
+                    <span className="ml-2 text-gray-600">Loading...</span>
+                  </div>
+                )}
+                {capstone.chapters.map((chapter) => (
+                  <ChapterDropdown
+                    key={chapter.id}
+                    chapter={chapter}
+                    isOpen={openChapters[chapter.id]}
+                    onToggle={() => toggleChapter(chapter.id)}
+                  />
+                ))}
               </div>
             )}
           </div>

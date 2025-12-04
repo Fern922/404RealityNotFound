@@ -136,7 +136,7 @@ export const capstones: Capstone[] = [
     id: 2,
     title: "Capstone 2",
     description: "A comprehensive analytics platform for measuring and optimizing AR experience effectiveness in cultural heritage institutions.",
-    status: "in-progress",
+    status: "to defend",
     timeline: "July 12, 2025 - December 5, 2025",
     chapters: [
       {
