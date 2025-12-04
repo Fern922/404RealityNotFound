@@ -154,14 +154,6 @@ export const capstones: Capstone[] = [
           {
             title: "5.3 Recommendations",
             content: ""
-          },
-          {
-            title: "References",
-            content: ""
-          },
-          {
-            title: "Appendices",
-            content: ""
           }
         ]
       }
